@@ -1,3 +1,3 @@
 #! /bin/bash
 
-docker rm $(docker ps -f "status=exited")
+docker rm $(docker ps -aqf "status=exited")
